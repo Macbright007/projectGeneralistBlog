@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 10000;
+}
+
+.innerNav {
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.innerNav > h2 {
+  margin-left: 4rem;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid; */
+  justify-content: space-between;
+  width: 1100px;
+}
+
+.navItems {
+  border-left: 2px solid #ececec;
+  padding-inline: 1rem;
+  display: flex;
+  gap: 1.3rem;
+}
+
+.navItems > a,
+.tabsLinks > a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.subscribe {
+  border-left: 2px solid #ececec;
+}
+
+.subscribe > input {
+  padding: 0.5rem 1.4rem;
+  border: none;
+}
+
+.subscribe > input::placeholder,
+.inputCont > input::placeholder {
+  color: #bebebea5;
+  font-size: 12px;
+}
+.subscribe > button {
+  padding: 0.7rem 1.4rem;
+  border: none;
+  background-color: #069275;
+  color: #fff;
+  font-size: 10px;
+}
+
+/* styling for tabs */
+.tabs {
+  border-block: 1.4px solid #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputCont {
+  margin-left: 4rem;
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.inputCont > input {
+  padding: 0.5rem 0.4rem;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.tabsLinks {
+  border-inline: 2px solid #ececec;
+  padding-left: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.tabsLinks > a {
+  text-transform: uppercase;
+  font-size: 8px;
+}
+
+.tabsLinks > span {
+  border-left: 2px solid #ececec;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling for main */
+.genLayout {
+  max-width: 1100px;
+  margin: auto;
+}
+.generalistBlog {
+  margin-block: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  padding-top: 4rem;
+}
+
+.authorPickCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.authorCardImg {
+  position: relative;
+}
+
+.tag {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  font-weight: 700;
+  padding-inline: 2px;
+  text-transform: uppercase;
+}
+
+.authorCardImg > img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.nfBG {
+  background-color: #ccefe7;
+  color: #39ac8e;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.authorContent > h1 {
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+/* .lastestBanner {
+  border: 2px solid brown;
+} */
+
+.imgCont {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 55vh;
+}
+
+.imgCont > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latestContent {
+  background-color: #fff;
+  border: 1px solid #ececec;
+  max-width: 400px;
+  margin: -3rem auto 0;
+  padding-inline: .3rem;
+}
+
+.latestContent > span{
+    display: block;
+    width: 30px;
+    margin: 1rem auto;
+}
+
+.latestContent > h1 {
+  text-align: center;
+  font-size: 1.96rem;
+  text-transform: capitalize;
+}
+
+.latestContent > p {
+  font-size: 11px;
+  width: 300px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.7rem auto;
+}
+
+.mostViewed > h3 {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.viewedCard {
+  padding-block: 1rem;
+  border-bottom: 2px solid #ececec;
+  /* margin-top: 1rem; */
+}
+
+.viewedCard > h3 {
+  padding-top: 3px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
